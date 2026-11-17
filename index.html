@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Avenue Automobiles — Véhicules neufs et d'occasion au Burkina Faso</title>
+<meta name="description" content="Avenue Automobiles, concessionnaire de véhicules neufs et d'occasion au Burkina Faso. Garantie 12 mois, reprise, financement et livraison dans tout le pays.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#content">Aller au contenu</a>
+
+<header class="site-header" id="top">
+  <div class="shell header-inner">
+    <a class="brand" href="#top" aria-label="Avenue Automobiles, accueil">
+      <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <path d="M5 25 15 7h4l10 18h-5l-2.5-5h-9L10 25H5Z" fill="currentColor"/>
+      </svg>
+      <span class="brand-text"><strong>AVENUE</strong><small>Automobiles</small></span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+      <a href="#vehicules">Véhicules</a>
+      <a href="#services">Services</a>
+      <a href="#financement">Financement</a>
+      <a href="#showroom">Notre showroom</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="btn btn-primary header-cta" href="#contact">Prendre rendez-vous</a>
+  </div>
+</header>
+
+<main id="content">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <img class="hero-img" src="assets/hero.jpg" alt="Voiture de prestige de face dans un showroom" fetchpriority="high">
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="shell hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Concession · Neuf et occasion<span class="signature" aria-hidden="true"></span></p>
+        <h1 id="hero-title">La bonne voiture, au bon prix, sans détour</h1>
+        <p class="lede">Véhicules contrôlés, garantis et livrés dans tout le Burkina Faso. Reprise de votre ancienne voiture sur place.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#vehicules">Voir les véhicules</a>
+          <a class="btn btn-ghost" href="#contact">Estimer ma reprise</a>
+        </div>
+      </div>
+      <dl class="hero-stats">
+        <div><dt>Véhicules en stock</dt><dd>6</dd></div>
+        <div><dt>Garantie incluse</dt><dd>12 mois</dd></div>
+        <div><dt>Livraison</dt><dd>Partout au Burkina</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services" aria-label="Nos services">
+    <div class="shell service-grid">
+      <article class="service">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.4 8 8 9 4.6-1 8-4 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+        <div><h2>Garantie 12 mois</h2><p>Chaque véhicule est contrôlé et garanti avant sa mise en vente.</p></div>
+      </article>
+      <article class="service">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 16v3h3"/><path d="M20 8V5h-3"/><path d="M5.5 15a7 7 0 0 1 12-2L20 15M4 9l2.5 2A7 7 0 0 1 18.5 13"/></svg>
+        <div><h2>Reprise sur place</h2><p>Estimation de votre voiture et déduction immédiate sur votre achat.</p></div>
+      </article>
+      <article class="service">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h4"/></svg>
+        <div><h2>Financement sur mesure</h2><p>Durée, apport et mensualité ajustés à votre budget.</p></div>
+      </article>
+      <article class="service">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 7h11v10H3zM14 10h4l3 3v4h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>
+        <div><h2>Livraison à domicile</h2><p>Votre véhicule amené là où vous le souhaitez, en toute simplicité.</p></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- INVENTAIRE -->
+  <section class="section" id="vehicules" aria-labelledby="vehicules-title">
+    <div class="shell">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Stock du moment<span class="signature" aria-hidden="true"></span></p>
+          <h2 id="vehicules-title">En stock aujourd'hui</h2>
+        </div>
+        <p class="count" id="result-count" aria-live="polite">6 véhicules</p>
+      </div>
+
+      <div class="filters" role="group" aria-label="Filtrer les véhicules">
+        <label class="field search-field">
+          <span>Rechercher</span>
+          <input type="search" id="f-search" placeholder="Marque ou modèle" autocomplete="off">
+        </label>
+        <label class="field">
+          <span>Marque</span>
+          <select id="f-brand">
+            <option value="">Toutes les marques</option>
+            <option>Audi</option><option>BMW</option><option>Fiat</option>
+            <option>Ford</option><option>Porsche</option><option>Toyota</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Budget maxi</span>
+          <select id="f-budget">
+            <option value="">Sans limite</option>
+            <option value="10000000">10 000 000 FCFA</option>
+            <option value="25000000">25 000 000 FCFA</option>
+            <option value="40000000">40 000 000 FCFA</option>
+            <option value="60000000">60 000 000 FCFA</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Énergie</span>
+          <select id="f-energy">
+            <option value="">Toutes</option>
+            <option>Essence</option><option>Diesel</option><option>Hybride</option>
+          </select>
+        </label>
+        <button class="btn btn-quiet reset-btn" type="button" id="reset-filters">Réinitialiser</button>
+      </div>
+
+      <div class="car-grid" id="car-grid">
+        <article class="car-card" data-name="Porsche Panamera 4S" data-brand="Porsche" data-price="51750000" data-energy="Essence" data-year="2021" data-km="42 500 km" data-badge="Occasion" data-img="assets/car-porsche.jpg">
+          <div class="car-media"><img src="assets/car-porsche.jpg" alt="Porsche Panamera noire en circulation" loading="lazy"><span class="tag">Occasion</span></div>
+          <div class="car-body">
+            <h3>Porsche Panamera 4S</h3>
+            <p class="specs"><span>2021</span><span>42 500 km</span><span>Essence</span></p>
+            <div class="car-foot"><strong class="price">51 750 000 FCFA</strong><button class="link-btn" type="button">Voir le véhicule <span aria-hidden="true">→</span></button></div>
+          </div>
+        </article>
+
+        <article class="car-card" data-name="BMW Série 5 520d" data-brand="BMW" data-price="22890000" data-energy="Diesel" data-year="2020" data-km="68 000 km" data-badge="Occasion" data-img="assets/car-bmw.jpg">
+          <div class="car-media"><img src="assets/car-bmw.jpg" alt="Berline BMW grise en circulation" loading="lazy"><span class="tag">Occasion</span></div>
+          <div class="car-body">
+            <h3>BMW Série 5 520d</h3>
+            <p class="specs"><span>2020</span><span>68 000 km</span><span>Diesel</span></p>
+            <div class="car-foot"><strong class="price">22 890 000 FCFA</strong><button class="link-btn" type="button">Voir le véhicule <span aria-hidden="true">→</span></button></div>
+          </div>
+        </article>
+
+        <article class="car-card" data-name="Audi A4 35 TFSI" data-brand="Audi" data-price="23940000" data-energy="Essence" data-year="2022" data-km="24 000 km" data-badge="Occasion" data-img="assets/car-audi.jpg">
+          <div class="car-media"><img src="assets/car-audi.jpg" alt="Audi noire de face" loading="lazy"><span class="tag">Occasion</span></div>
+          <div class="car-body">
+            <h3>Audi A4 35 TFSI</h3>
+            <p class="specs"><span>2022</span><span>24 000 km</span><span>Essence</span></p>
+            <div class="car-foot"><strong class="price">23 940 000 FCFA</strong><button class="link-btn" type="button">Voir le véhicule <span aria-hidden="true">→</span></button></div>
+          </div>
+        </article>
+
+        <article class="car-card" data-name="Toyota RAV4 Hybride" data-brand="Toyota" data-price="25250000" data-energy="Hybride" data-year="2023" data-km="18 000 km" data-badge="Garantie 12 mois" data-img="assets/car-rav4.jpg">
+          <div class="car-media"><img src="assets/car-rav4.jpg" alt="Toyota RAV4 grise sur la route" loading="lazy"><span class="tag">Garantie 12 mois</span></div>
+          <div class="car-body">
+            <h3>Toyota RAV4 Hybride</h3>
+            <p class="specs"><span>2023</span><span>18 000 km</span><span>Hybride</span></p>
+            <div class="car-foot"><strong class="price">25 250 000 FCFA</strong><button class="link-btn" type="button">Voir le véhicule <span aria-hidden="true">→</span></button></div>
+          </div>
+        </article>
+
+        <article class="car-card" data-name="Fiat 500 1.2 Lounge" data-brand="Fiat" data-price="8460000" data-energy="Essence" data-year="2019" data-km="52 000 km" data-badge="Occasion" data-img="assets/car-fiat.jpg">
+          <div class="car-media"><img src="assets/car-fiat.jpg" alt="Fiat 500 bleue stationnée devant un mur de pierre" loading="lazy"><span class="tag">Occasion</span></div>
+          <div class="car-body">
+            <h3>Fiat 500 1.2 Lounge</h3>
+            <p class="specs"><span>2019</span><span>52 000 km</span><span>Essence</span></p>
+            <div class="car-foot"><strong class="price">8 460 000 FCFA</strong><button class="link-btn" type="button">Voir le véhicule <span aria-hidden="true">→</span></button></div>
+          </div>
+        </article>
+
+        <article class="car-card" data-name="Ford Expedition XLT" data-brand="Ford" data-price="20660000" data-energy="Diesel" data-year="2021" data-km="46 000 km" data-badge="Occasion" data-img="assets/car-tiguan.jpg">
+          <div class="car-media"><img src="assets/car-tiguan.jpg" alt="Ford Expedition blanche dans un paysage sec" loading="lazy"><span class="tag">Occasion</span></div>
+          <div class="car-body">
+            <h3>Ford Expedition XLT</h3>
+            <p class="specs"><span>2021</span><span>46 000 km</span><span>Diesel</span></p>
+            <div class="car-foot"><strong class="price">20 660 000 FCFA</strong><button class="link-btn" type="button">Voir le véhicule <span aria-hidden="true">→</span></button></div>
+          </div>
+        </article>
+      </div>
+
+      <p class="empty-state" id="empty-state" hidden>Aucun véhicule ne correspond à ces critères. Essayez d'élargir votre recherche.</p>
+    </div>
+  </section>
+
+  <!-- FINANCEMENT -->
+  <section class="financing" id="financement" aria-labelledby="finance-title">
+    <div class="shell finance-grid">
+      <div class="finance-copy">
+        <p class="eyebrow">Financement<span class="signature" aria-hidden="true"></span></p>
+        <h2 id="finance-title">Une mensualité qui tient dans votre budget</h2>
+        <p>Réglez le prix du véhicule et la durée du prêt pour estimer votre mensualité. Un conseiller reprend les chiffres avec vous en concession.</p>
+        <a class="link" href="#contact">Parler à un conseiller <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="simulator">
+        <div class="sim-row">
+          <label for="sim-price">Prix du véhicule</label>
+          <output id="sim-price-out" for="sim-price">25 000 000 FCFA</output>
+        </div>
+        <input type="range" id="sim-price" min="5000000" max="100000000" step="1000000" value="25000000">
+        <div class="sim-row">
+          <label for="sim-duration">Durée du prêt</label>
+          <output id="sim-duration-out" for="sim-duration">60 mois</output>
+        </div>
+        <input type="range" id="sim-duration" min="24" max="84" step="12" value="60">
+        <div class="sim-result">
+          <span>Mensualité estimée</span>
+          <strong id="sim-monthly" aria-live="polite">482 158 FCFA / mois</strong>
+        </div>
+        <p class="sim-note">Simulation indicative au taux de 5,9 %, hors apport et assurance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOWROOM -->
+  <section class="section showroom" id="showroom" aria-labelledby="showroom-title">
+    <div class="shell showroom-grid">
+      <div class="showroom-media">
+        <img src="assets/showroom.jpg" alt="Véhicule présenté dans le showroom d'Avenue Automobiles" loading="lazy">
+      </div>
+      <div class="showroom-copy">
+        <p class="eyebrow">Notre showroom<span class="signature" aria-hidden="true"></span></p>
+        <h2 id="showroom-title">Un lieu, des gens, des voitures</h2>
+        <p>Nous recevons nos véhicules en concession, pas dans un entrepôt. Vous pouvez les voir, les toucher et les essayer avant de décider.</p>
+        <dl class="info-list">
+          <div><dt>Adresse</dt><dd>Avenue de la Liberté, Ouagadougou</dd></div>
+          <div><dt>Horaires</dt><dd>Lundi – samedi, 8 h – 18 h</dd></div>
+          <div><dt>Téléphone</dt><dd>70 30 45 18</dd></div>
+        </dl>
+        <a class="btn btn-primary" href="#contact">Prendre rendez-vous</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TÉMOIGNAGES -->
+  <section class="reviews" aria-labelledby="reviews-title">
+    <div class="shell">
+      <p class="eyebrow">Retours de clients<span class="signature" aria-hidden="true"></span></p>
+      <h2 id="reviews-title">Ce qu'ils en disent</h2>
+      <div class="review-grid">
+        <blockquote>
+          <p>La voiture correspondait exactement à l'annonce. La reprise de l'ancienne a été réglée le même jour.</p>
+          <footer><span>Abdoulaye K.</span><span class="mono">Ouagadougou</span></footer>
+        </blockquote>
+        <blockquote>
+          <p>On m'a expliqué les options de financement sans pression. J'ai su exactement ce que je payais.</p>
+          <footer><span>Aminata S.</span><span class="mono">Bobo-Dioulasso</span></footer>
+        </blockquote>
+        <blockquote>
+          <p>Véhicule livré chez moi, propre, avec les papiers en règle. Aucune mauvaise surprise.</p>
+          <footer><span>Jean-Marc O.</span><span class="mono">Koudougou</span></footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact" aria-labelledby="contact-title">
+    <div class="shell contact-grid">
+      <div>
+        <p class="eyebrow">Contact<span class="signature" aria-hidden="true"></span></p>
+        <h2 id="contact-title">Parlons de votre prochaine voiture</h2>
+        <p class="contact-intro">Laissez vos coordonnées, un conseiller vous rappelle pour confirmer la disponibilité du véhicule et organiser un essai.</p>
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <label class="field"><span>Nom</span><input type="text" name="nom" required autocomplete="name"></label>
+            <label class="field"><span>Téléphone</span><input type="tel" name="telephone" autocomplete="tel" placeholder="06 00 00 00 00"></label>
+          </div>
+          <label class="field"><span>Email</span><input type="email" name="email" required autocomplete="email" placeholder="vous@exemple.fr"></label>
+          <label class="field"><span>Véhicule concerné</span>
+            <select name="vehicule" id="contact-vehicule">
+              <option value="">Pas encore de véhicule précis</option>
+              <option>Porsche Panamera 4S</option><option>BMW Série 5 520d</option>
+              <option>Audi A4 35 TFSI</option><option>Toyota RAV4 Hybride</option>
+              <option>Fiat 500 1.2 Lounge</option><option>Ford Expedition XLT</option>
+            </select>
+          </label>
+          <label class="field"><span>Message</span><textarea name="message" rows="4" required placeholder="Votre projet, vos questions"></textarea></label>
+          <button class="btn btn-primary" type="submit">Envoyer ma demande</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          <p class="form-note">Formulaire de démonstration : aucun message n'est réellement envoyé.</p>
+        </form>
+      </div>
+      <aside class="contact-aside">
+        <div class="aside-block">
+          <h3>Venir nous voir</h3>
+          <p>Avenue de la Liberté<br>Ouagadougou, Burkina Faso</p>
+          <p>Lundi – samedi<br>8 h – 18 h</p>
+        </div>
+        <div class="aside-block">
+          <h3>Nous joindre</h3>
+          <p><a href="tel:+22670304518">70 30 45 18</a></p>
+          <p><a href="mailto:contact@avenue-automobiles.bf">contact@avenue-automobiles.bf</a></p>
+        </div>
+        <div class="aside-block">
+          <h3>Reprise estimée en 24 h</h3>
+          <p>Apportez la carte grise et le carnet d'entretien, nous vous faisons une offre sur place.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="shell">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="brand" href="#top" aria-label="Avenue Automobiles, retour en haut">
+          <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M5 25 15 7h4l10 18h-5l-2.5-5h-9L10 25H5Z" fill="currentColor"/></svg>
+          <span class="brand-text"><strong>AVENUE</strong><small>Automobiles</small></span>
+        </a>
+        <p>Véhicules neufs et d'occasion, contrôlés et garantis.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Navigation de pied de page">
+        <div><h3>Explorer</h3><a href="#vehicules">Véhicules</a><a href="#services">Services</a><a href="#financement">Financement</a></div>
+        <div><h3>Concession</h3><a href="#showroom">Notre showroom</a><a href="#contact">Contact</a><a href="#contact">Prendre rendez-vous</a></div>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Avenue Automobiles</span>
+      <span>Site de démonstration — société fictive</span>
+    </div>
+  </div>
+</footer>
+
+<dialog class="car-dialog" id="car-dialog" aria-labelledby="dialog-title">
+  <button class="dialog-close" type="button" id="dialog-close" aria-label="Fermer la fiche">×</button>
+  <img id="dialog-img" src="" alt="">
+  <div class="dialog-body">
+    <span class="tag" id="dialog-badge">Occasion</span>
+    <h2 id="dialog-title"></h2>
+    <p class="dialog-price" id="dialog-price"></p>
+    <dl class="dialog-specs">
+      <div><dt>Année</dt><dd id="dialog-year"></dd></div>
+      <div><dt>Kilométrage</dt><dd id="dialog-km"></dd></div>
+      <div><dt>Énergie</dt><dd id="dialog-energy"></dd></div>
+    </dl>
+    <p class="dialog-note">Garantie 12 mois incluse. Reprise et financement possibles sur ce véhicule.</p>
+    <button class="btn btn-primary" type="button" id="dialog-contact">Demander des informations</button>
+  </div>
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
